@@ -1,12 +1,13 @@
 body{
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: plum;
+    background-color: #ededed;
 }
 h1{
     text-align: center;
-    color: blueviolet;
+    color: #111;
 }
+/*
 .codigo{
     text-align: center;
     width: 250px;
@@ -17,17 +18,16 @@ h1{
     color: white;
     font-size: x-large;
 }
+*/
 
-/*
 .codigo{
     text-align: center;
     width: 250px;
     margin: 0 auto;
-    background-image: linear-gradient(to bottom right, lightgray, rgb(87, 87, 87), dimgray);
+    background-image: linear-gradient(to bottom right, rgb(187, 187, 187), rgb(99, 98, 98), rgb(65, 65, 65));
     padding: 20px;
     border-radius: 10px;
     color: white;
     color: ;
     font-size: x-large;
 }
-*/
