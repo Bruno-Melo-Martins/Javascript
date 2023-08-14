@@ -1,4 +1,4 @@
-body{
+/*body{
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #ededed;
@@ -7,19 +7,6 @@ h1{
     text-align: center;
     color: #111;
 }
-/*
-.codigo{
-    text-align: center;
-    width: 250px;
-    margin: 0 auto;
-    background-image: linear-gradient(to bottom right,fuchsia, blueviolet, royalblue);
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    font-size: x-large;
-}
-*/
-
 .codigo{
     text-align: center;
     width: 250px;
@@ -30,4 +17,28 @@ h1{
     color: white;
     color: ;
     font-size: x-large;
+}
+*/
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: plum;
+}
+h1{
+    text-align: center;
+    color: blueviolet;
+}
+.codigo{
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    background-image: url(beautiful-purple-color-gradient.avif);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: x-large;
+}
+.codigo:hover{
+    background-position: right;
+    transition: 1s;
 }
