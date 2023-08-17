@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <script>
+        //função anonima
+        var exibirSaudacao = function(nome){
+            document.write("Olá " + nome + ", tudo bem?")
+        }
+        exibirSaudacao("JOta")
+
+        //methods
+        //metodos de string
+        document.write("<br>")
+        document.write('Jorge estevao') 
+        //Jorge estevao
+        //0123456789101112
+        document.write("<br>")
+        document.write('Jorge estevao'.length)
+        
+        document.write("<br>")
+        document.write('Jorge estevao'.charAt(12))
+
+        document.write("<br>")
+        document.write('Jorge estevao'.indexOf("r"))
+        
+        document.write("<br>")
+        document.write('Jorge estevao'.replace("estevao", "dale"))
+
+        document.write("<br>")
+        document.write('Jorge estevao'.substr(6,12))
+        
+        document.write("<br>")
+        document.write('Jorge estevao'.toLocaleLowerCase())
+
+        document.write("<br>")
+        document.write('Jorge estevao'.toLocaleUpperCase())
+
+        let num = 13.4567
+
+        document.write("<br>")
+        document.write(num.toExponential())
+        document.write("<br>")
+        document.write(num.toFixed(2))
+        document.write("<br>")
+        document.write(Math.round(num))
+    </script>
+</head>
+<body>
+    <br>
+    <p id="demo"></p>
+    <script>
+        const d = new Date();
+        document.write(d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear())
+    </script>
+
+    <script>
+        let texto = prompt("Digite algo: ")
+        document.write("<br>")
+        document.write(texto.length)
+        document.write("<br>")
+        document.write(texto.toLocaleLowerCase())
+        document.write("<br>")
+        document.write(texto.toLocaleUpperCase())
+        document.write("<br>")
+        document.write(texto.trim())
+        var a = Math.round((texto.length)/2)
+        document.write("<br>")
+        document.write(texto.substr(a,(texto.length)))
+    </script>
+</body>
+</html>
