@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(to bottom right, fuchsia, blueviolet, royalblue);
+    min-height: 700px;
+}
+h1{
+    text-align: center;
+}
+.js{
+    margin: 50px auto;
+    width: 300px;
+    font-size: larger;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.233);
+    min-height: 300px;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+.js fieldset{
+    border-radius: 10px;
+    border: white solid 1px;
+}
+.js input[type="text"], .js input[type="number"]{
+    width: 100%;
+    margin-bottom: 5px;
+    height: 25px;
+    border-radius: 8px;
+    border: none;
+    text-indent: 10px;
+}
+.js ::-webkit-input-placeholder{
+    text-indent: 10px;
+}
+.js button{
+    width: 50px;
+    height: 20px;
+}
