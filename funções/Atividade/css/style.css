@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: linear-gradient(to bottom right, fuchsia, blueviolet, royalblue);
+    background-image:linear-gradient(to bottom right, fuchsia, blueviolet, royalblue);
     min-height: 700px;
 }
 h1{
@@ -20,7 +20,7 @@ h1{
 }
 .js fieldset{
     border-radius: 10px;
-    border: white solid 1px;
+    border: none;
 }
 .js input[type="text"], .js input[type="number"]{
     width: 100%;

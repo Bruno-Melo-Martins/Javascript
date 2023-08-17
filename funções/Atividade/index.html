@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ImC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="js">
+        <form>
+            <input type="text" name="nome" id="nome" placeholder="seu nome">
+            <input type="number" name="altura" id="altura" placeholder="sua altura (em cm)">
+            <input type="number" name="peso" id="peso" placeholder="peso (em quilos)">
+            <button type="submit" onclick="seuimc()">Enviar</button>
+        </form>
+        <script>
+var nome = (document.getElemenytbyID("nome").value)
+const altura = parseFloat((document.getElementById("altura").value))
+const peso = parseFloat((document.getElementById("peso").value))
+function seuimc(nome,altura, peso){
+    altura = altura /100
+    imc = Math.round(peso / (altura * altura))
+        if(imc < 16){
+        var classe = 'Baixo peso muito grave'
+        }
+        if(imc >= 16 && imc < 17){
+        var classe = 'Baixo peso grave'
+        }
+        if(imc >= 17 && imc < 18.50){
+        var classe = 'Baixo peso'
+        }
+        if(imc >= 18,50 && imc < 25){
+        var classe = 'Peso normal'
+        }
+        if(imc >= 25 && imc < 30){
+        var classe = 'Sobrepeso'
+        }
+        if(imc >= 30 && imc < 35){
+        var classe = 'Obesidade grau I'
+        }
+        if(imc >= 35 && imc < 40){
+        var classe = 'Obesidade grau II'
+        }
+        if(imc > 40){
+        var classe = 'Obesidade grau III'
+        }
+        frase = nome + " possui um indice de massa corporal " + imc + " sendo classificado " + classe
+        document.write(frase)
+    }
+
+        </script>
+    </div>
+</body>
+</html>
