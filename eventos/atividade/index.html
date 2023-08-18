@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <div class="corpo">
+        <div id="barra">
+            <input type="text" name="visor" id="visor" placeholder="0">
+        </div>
+        <div class="blocolateral">
+            <div id="linha1">
+                <button id="maior" onclick="limpar()">C</button><button onclick="adicione('/')">/</button>
+            </div>
+            <div id="linha2">
+                <button onclick="adicione('1')">1</button><button onclick="adicione('2')">2</button><button onclick="adicione('3')">3</button>
+            </div>
+            <div id="linha3">
+                <button onclick="adicione('4')">4</button><button onclick="adicione('5')">5</button><button onclick="adicione('6')">6</button>
+            </div>
+            <div id="linha4">
+                <button onclick="adicione('7')">7</button><button onclick="adicione('8')">8</button><button onclick="adicione('9')">9</button>
+            </div>
+            <div id="linha5">
+                <button id="maior" onclick="adicione('0')">0</button><button onclick="adicione('.')">.</button>
+            </div>
+        </div>
+        <div class="linhah">
+            <button onclick="adicione('*')">x</button><button onclick="adicione('-')">-</button><button onclick="adicione('+')">+</button><button id="maiorh" onclick="calcular('')">=</button>
+        </div>
+        <div class="clear"></div>
+        <script src="js/code.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+    <script>
+        //eventos de mouse
+        /*Cinco principais eventos:
+        onclick - acionado quando clicado
+        ondblclick - acionado quando duplamente clicado
+        onmouseup - acionado quando o click é liberado
+        onmouseover - acionado quando o mouse passa por cima do elemento
+        onmouseout - acionado quando o mouse sai do elemento*/
+        function acao(){
+            document.write('Ser aluno SENAI é bom demais!')
+        }
+        //eventos de teclado
+        /*Dois principais eventos:
+        onkeydown - sempre que alguma coisa for pressionada
+        onkeypress - funciona quando um carcactere for pressionado*/
+        function acao2(){
+            alert('não fulano não!')
+        }
+        //eventos de janela
+        /*Dois principais eventos:
+        onresize - aciona redimensionar a tela
+        onscroll - acionado quando o usuario rola o scroll do mouse pelo site*/
+        function acao3(){
+            alert("Hit the road Jack")
+        }
+        //eventos de formulario
+        /*Dois principais eventos:
+        onfocus - quando o elemento recebe o foco do cursor do mouse
+        onblur - quando o elemento perde o o foco
+        onchange - quando o estado do elemento é modificado*/
+        function acao4(){
+            alert('Responda direito')
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onresize="acao3()"><!--onscroll="acao3()"-->
+    <!--Eventos de Mouse-->
+    <div id="exemplo" ondblclick="acao()">
+
+    </div>
+    <!--Eventos de teclado-->
+    <input type="text" onkeypress="acao2()" id="exemplo2">
+    <!--Eventos de janela-->
+    <div id="exemplo3"></div>
+    <!--Eventos de formulario-->
+    <input type="text" onchange="acao4()">
+</body>
+</html>

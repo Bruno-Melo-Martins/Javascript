@@ -13,6 +13,7 @@
             <input type="number" name="peso" id="peso" placeholder="peso (em quilos)">
             <button type="submit" onclick="seuimc()">Enviar</button>
         </form>
+        <p id="resultado"></p>
         <script>
 var nome = (document.getElemenytbyID("nome").value)
 const altura = parseFloat((document.getElementById("altura").value))
@@ -45,7 +46,7 @@ function seuimc(nome,altura, peso){
         var classe = 'Obesidade grau III'
         }
         frase = nome + " possui um indice de massa corporal " + imc + " sendo classificado " + classe
-        document.write(frase)
+        document.getElementById('resultado').innerHTML=frase
     }
 
         </script>
