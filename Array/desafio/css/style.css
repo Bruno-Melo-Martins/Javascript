@@ -1,0 +1,24 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(fuchsia,#8148BB, royalblue);
+    color: white;
+}
+
+.premier,.segund,.tercer{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.premier,.segund,.tercer h2{
+    text-align: center;
+}
+
+.premier hr,.segund hr,.tercer hr{
+    height: 5px;
+    background-color: darkmagenta;
+    border: none;
+}
+
+p{
+    text-align: justify;
+}

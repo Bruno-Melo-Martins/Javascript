@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        /*vetores são variáveis
+        que permitem grande 
+        armazenamento de dados*/
+        var fruta_kelry = 'laranja'
+        var fruta_pedro='uva'
+        var fruta_kayron='manga'
+        var fruta_raira='manga'
+        var fruta_lazaro='laranja'
+        var fruta_bruno='manga'
+        var fruta_witchellen='tangerina'
+        var fruta_mariaeduarda='morango'
+        var fruta_gustavo='kiwi'
+
+        document.write(fruta_bruno)
+        document.write('<br>')
+        document.write(fruta_bruno)
+        document.write('<br>')
+        document.write(fruta_bruno)
+        document.write('<br>')
+        document.write(fruta_kelry)
+        document.write('<br>')
+        document.write(fruta_kelry)
+        document.write('<br>')
+        document.write(fruta_pedro)
+        document.write('<br>')
+        document.write(fruta_witchellen)
+        document.write('<br>')
+        document.write(fruta_mariaeduarda)
+        document.write('<br>')
+        document.write(fruta_gustavo)
+        document.write('<br>')
+        document.write('<br>')
+
+        //vamos utilizar vetores para fazer a mesma coisa
+        //primeira forma de declaração
+        let lista_frutas = Array()
+        lista_frutas[1]=  fruta_kelry
+        lista_frutas[2]=  fruta_pedro
+        lista_frutas[3]=  fruta_kayron
+        lista_frutas[4]=  fruta_raira
+        lista_frutas[5]=  fruta_lazaro
+        lista_frutas[6]=  fruta_bruno
+        lista_frutas[7]=  fruta_witchellen
+        lista_frutas[8]=  fruta_mariaeduarda
+        lista_frutas[9]=  fruta_gustavo
+
+        for(var i = 1; i<lista_frutas.length; i++){
+            document.write(lista_frutas[i] +"<br>")
+        }
+        document.write('<br>')
+
+        //segunda forma de declaração
+        var lista_frtas = ['laranja','uva','manga','manga','laranja','manga','tangerina','morango','kiwi']
+        
+        document.write(lista_frtas)
+
+        document.write('<br>')
+        document.write('<br>')
+        //asdfghjk
+
+        document.write(lista_frutas.indexOf('manga'));
+
+        document.write('<br>')
+        document.write('<br>')
+
+        document.write(lista_frutas.sort())
+
+        //a função push adciona um elemento no final do array
+        lista_frutas.push('abacaxi')
+
+        document.write('<br>')
+
+        document.write(lista_frutas)
+
+        //a função unshift adiciona um elemento no começo do array
+        lista_frutas.unshift('maracuja')
+
+        document.write('<br>')
+
+        document.write(lista_frutas)
+
+        //a função pop retira um elemento no final do array
+        lista_frutas.pop()
+
+        document.write('<br>')
+
+        document.write(lista_frutas)
+
+        
+        //a função pop retira um elemento no começo do array
+        lista_frutas.shift()
+
+        document.write('<br>')
+
+        document.write(lista_frutas)
+
+        
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
