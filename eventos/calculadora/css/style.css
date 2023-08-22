@@ -62,5 +62,5 @@ body{
 }
 .blocolateral button:hover, #maior:hover, #maiorh:hover, .linhah button:hover{
     background-image: linear-gradient(blueviolet, magenta);
-    border: blueviolet solid;
+    transition: 1s;
 }

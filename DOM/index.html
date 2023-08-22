@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="js">
+        <script>
+            var caracter = ""
+            function LetNum(){
+                caracter = (document.getElementById('entrada').value)
+                document.getElementById('entrada').value=''
+                caracter.trim()
+                switch(caracter){
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    document.getElementById('num').value += caracter
+                    break
+                    default: 
+                    document.getElementById('letra').value += caracter
+                }
+            }
+            function limpavalor(){
+                document.getElementById('num').value = ''
+                document.getElementById('letra').value = ''
+            }
+            //modificando estilo
+            function mudarcor(cordefundo){
+                document.getElementById('quadrado').style.backgroundColor = cordefundo
+                document.getElementById('quadrado').style.transition = '1s'
+            }
+            //modificando classes
+            function modificarclasse(){
+                document.getElementById('mensagem').className = 'estilo2'
+            }
+        </script>
+    </div>
+    <div class="emput">
+        <div class="campo_texto">
+            <input type="text" id="entrada" placeholder="Digite um caracter" name="inp" onkeyup="LetNum()">
+        </div>
+        <hr>
+        <div class="letnum">
+            <input type="text" name="letra" id="letra" placeholder="Letras" disabled>
+            <input type="text" name="num" id="num" placeholder="Números" disabled>
+        </div>
+
+        <span id="reset"><button onclick="limpavalor()" >Resetar</button></span>
+        <hr>
+        <!--Mudar style-->
+        <div class="mudarcor">
+            <p>Alterar a cor para:</p>
+            <button onclick="mudarcor('#FF0000')">Vermelho</button>
+            <button onclick="mudarcor('#0000FF')">Azul</button>
+            <button onclick="mudarcor('#00FF00')">Verde</button>
+            <div id="quadrado">
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!--Modificando classes-->
+        <div>
+        <div id="mensagem" class="estilo1">Modificando a classe do elemento</div>
+        <button onclick="modificarclasse()">Aplicar classe</button>
+        </div>
+    </div>
+</body>
+</html>

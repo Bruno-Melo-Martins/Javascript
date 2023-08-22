@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+    <form>
+        <input type="text" name="nome" id="nome" placeholder="Nome">
+        <input type="number" name="altura" id="altura" placeholder="Altura">
+        <input type="number" name="peso" id="peso" placeholder="Peso">
+        <button type="submit" onclick="seuimc()">Calcular Imc</button>
+    </form>       
+    </div>
+    <div>
+        <p id="teste"></p>
+        <script>
+            seuimc(nome,altura,peso){
+                nome = (document.getElementById('nome').value)
+                altura = (document.getElementById('altura').value)
+                peso = (document.getElementById('peso').value)
+                document.getElementById('teste').innerHTML=(nome + altura + peso)
+            }
+        </script>
+    </div>
+</body>
+</html>

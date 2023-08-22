@@ -1,0 +1,67 @@
+body{
+    background-image: linear-gradient( fuchsia,blueviolet, royalblue);
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.emput{
+    width: fit-content;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 10px;
+}
+.js{
+    width: fit-content;
+    margin: 0 auto;
+}
+.campo_texto{
+    margin: 0 auto;
+    text-align: center;
+}
+#entrada{
+    text-align: center;
+}
+
+#reset{
+    margin: 0 170px;
+    width: fit-content;
+}
+.letnum{
+    padding: 30px 15px 30px 15px;
+
+}
+
+.mudarcor p{
+    color: white;
+}
+#quadrado{
+    height: 150px;
+    width: 150px;
+    border: solid 1px black;
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+
+.estilo1{
+    background: fuchsia;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.estilo2{
+    background-image: linear-gradient(blueviolet, darkblue);
+    color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
