@@ -1,0 +1,27 @@
+body{
+    background-color: deepskyblue;
+    min-height: 650px;
+    color: black;
+}
+.barco{
+    padding: 20px;
+    background-color: rgba(98, 80, 102, 0.171);
+    border-radius: 10px;
+    min-width: max-content;
+    max-width: 500px;
+    margin: 10px auto;
+    transition: 1s;
+}
+.barco:hover{
+    
+}
+.barco h2{
+    text-align: center;
+    margin: 0;
+    font-size: xx-large;
+}
+
+.barco p{
+    text-align: center;
+    font-size: larger;
+}

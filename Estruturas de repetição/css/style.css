@@ -1,0 +1,9 @@
+body{
+    background-image: linear-gradient(to bottom right, deepskyblue, rgb(0, 45, 179));
+    background-attachment: fixed;
+    min-height: 700px;
+    color: #FF8540;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.5em;
+}

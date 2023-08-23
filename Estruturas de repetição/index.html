@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Repetições</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script>
+        /*while (enquanto)*/
+        var x = 1
+        while(x <= 10){
+            document.write(x+'<br>');
+            x++;
+        }
+
+        /*do{}while (faça, enquanto)*/
+        document.write('<br>')
+        var yasmin=200;
+        do{
+            document.write(yasmin + '<br>');
+            yasmin= yasmin-50;
+        }while(yasmin>=50)
+
+        /*for (para)*/
+        document.write('<br>')
+        for(x = 10; x>2; x--){
+            document.write(x+ '<br>')
+        }
+
+        document.write('<br>')
+        /*for in (para de até)*/
+        var lista = ['jorge', 'kelry', 'kenia', 'yasmin', 'eduarda']
+        
+        for(x in lista){
+            document.write('o indice '+x+' valor: '+lista[x]+'<br>')
+        }
+    </script>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+</html>
