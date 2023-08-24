@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM Window</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function abrirPopUp(){
+            janela=window.open('https://www.iguinho.com.br', 'nova_janela', 'width=200, height=100');
+        }
+        function fecharPopUp(){
+            janela.close();
+        }
+        
+        //função de tempo
+        var i = 5
+        x = setInterval(function(){
+            document.getElementById('contador').innerHTML=(i);
+            i--;
+            if(i==0){
+                clearInterval(x);
+            }
+        },1000)
+        //quando o tempo determinado acaba, executa algo função
+        y = setTimeout(function(){
+            document.getElementById('corpo').style.backgroundColor='red'       
+        },6000);
+    </script>
+</head>
+<body id="corpo">
+    <div class="botoes">
+        <button onclick="abrirPopUp()">Abrir janela</button>
+        <button onclick="fecharPopUp()">Fechar janela</button>
+        <button onclick="window.print()">Imprimir página</button>
+        <button onclick="window.location.href='https://www.google.com.br'">Acessar Google</button>
+    </div>
+    <div class="botoes">
+        <p id="contador"></p>
+    </div>
+</body>
+</html>

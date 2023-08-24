@@ -1,0 +1,25 @@
+.botoes{
+    width: fit-content;
+    margin: 10px auto;
+}
+.botoes button{
+    background-image: url(../img/fotor_2023-8-24_14_14_4.jpg);
+    background-color: black;
+    position: top center;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1.5px solid rgb(46, 46, 46);
+    transition: 0.7s;
+}
+.botoes button:hover{
+    background-position: bottom;
+    color: rgb(41, 41, 41);
+    transition: 0.7s;
+}
+
+body{
+    cursor:  url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg), 
+    auto;
+    height: 600px;
+}
