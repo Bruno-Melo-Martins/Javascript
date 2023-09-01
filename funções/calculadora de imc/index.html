@@ -2,54 +2,24 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>ImC</title>
+    <title>Calcule seu IMC hoje grátis não é golpe</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/code1.js"></script>
 </head>
 <body>
-    <div class="js">
-        <form>
-            <input type="text" name="nome" id="nome" placeholder="seu nome">
-            <input type="number" name="altura" id="altura" placeholder="sua altura (em cm)">
-            <input type="number" name="peso" id="peso" placeholder="peso (em quilos)">
-            <button type="submit" onclick="seuimc()">Enviar</button>
-        </form>
-        <p id="resultado"></p>
-        <script>
-var nome = (document.getElemenytbyID("nome").value)
-const altura = parseFloat((document.getElementById("altura").value))
-const peso = parseFloat((document.getElementById("peso").value))
-function seuimc(nome,altura, peso){
-    altura = altura /100
-    imc = Math.round(peso / (altura * altura))
-        if(imc < 16){
-        var classe = 'Baixo peso muito grave'
-        }
-        if(imc >= 16 && imc < 17){
-        var classe = 'Baixo peso grave'
-        }
-        if(imc >= 17 && imc < 18.50){
-        var classe = 'Baixo peso'
-        }
-        if(imc >= 18,50 && imc < 25){
-        var classe = 'Peso normal'
-        }
-        if(imc >= 25 && imc < 30){
-        var classe = 'Sobrepeso'
-        }
-        if(imc >= 30 && imc < 35){
-        var classe = 'Obesidade grau I'
-        }
-        if(imc >= 35 && imc < 40){
-        var classe = 'Obesidade grau II'
-        }
-        if(imc > 40){
-        var classe = 'Obesidade grau III'
-        }
-        frase = nome + " possui um indice de massa corporal " + imc + " sendo classificado " + classe
-        document.getElementById('resultado').innerHTML=frase
-    }
-
-        </script>
+    <div class="caixa">
+        <fieldset>
+            <legend>Insira seus dados</legend>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+            <input type="number" id="altura" placeholder="Digite sua altura">
+            <input type="number" id="peso" placeholder="Digite seu peso"> <br>
+            <button type="button" onclick="seuImc()">Calcular</button>
+        </fieldset>
+        <fieldset>
+            <legend>Seu resultado</legend>
+            <p id="resultado"></p>
+        </fieldset>
     </div>
 </body>
 </html>
